@@ -13,7 +13,7 @@ for line in Lines:
                 tops.append(total)
                 tops.sort(reverse=True)
                 print("sorted: ", tops)
-                tops = tops[ : -1]
+                tops = list[ : -1]
                 break
         total = 0
     else:
