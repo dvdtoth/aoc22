@@ -22,10 +22,11 @@ for key, line in enumerate(Lines):
                 root[c] += int(x[0])
             meh.pop()
 
-space_left = 70000000 - 41735494
-minimum = 1000000000
+# space_left = 70000000 - 41735494
+space_left = 70000000 - root['[\'/\']']
+minimum = 70000000
 for k,v in enumerate(root):
     if space_left + root[v] > 30000000 and root[v] < minimum:
         minimum = root[v]
-#    print(k, v, root[v])
+    # print(k, v, root[v])
 print(minimum)
