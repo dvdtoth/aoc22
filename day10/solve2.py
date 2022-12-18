@@ -10,7 +10,7 @@ def check_signal():
     if pos == x or pos == x-1 or pos == x+1:
         text += '#'
     else:
-        text += '.'
+        text += ' '
     if pos == 0:
         text += "\n"
 
